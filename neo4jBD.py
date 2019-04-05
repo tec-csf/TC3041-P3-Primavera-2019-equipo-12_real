@@ -1,7 +1,8 @@
 #Daniel Pelagio
 #Luis Carrasco
 #Code to connect to a database at port bolt://localhost:7687 and queue a query
-from neo4j import GraphDatabase
+#compile and run with python3 <filename.py>
+from neo4j import GraphDatabase #pip3 install neo4j
 
 uri = "bolt://localhost:7687"
 driver = GraphDatabase.driver(uri, auth=None)
